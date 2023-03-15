@@ -1,0 +1,133 @@
+.Registration {
+    display: flex;
+    width: min-content;
+    height: max-content;
+
+    &__form-name {
+        color: #fff;
+        font-family: 'Fira Sans';
+        // font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 6px;
+        // width: 45px;
+        // height: 20px;
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        color: #667085;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        width: 480px;
+        height: 48px;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-right: 43px;
+        // padding-top: 12px;
+    }
+
+    &__input-email {
+        padding-left: 16px;
+        margin-bottom: 41px;
+    }
+
+    &__input-password {
+        padding-left: 20px;
+    }
+
+    &__line {
+        width: 0px;
+        height: 80px;
+        border: 1px solid #ED5B5B;
+    }
+
+    &__auth-buttons {
+        width: 290px;
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        align-items: center;
+        padding: 0px 27px;
+        gap: 10px;
+
+        border: 0;
+        
+
+        width: 200px;
+        height: 62px;
+
+        background: #82E867;
+        border-radius: 40px;
+        margin-left: 45px;
+
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+
+color: #FFFFFF;
+    }
+
+    &__button-google {
+        margin-bottom: 47px;
+        background-image: url(../../../public/images/logos_google-icon.svg);
+        background-repeat: no-repeat;
+        background-position: 54px;
+        padding-left: 91px;
+
+    }
+
+    &__button-facebook {
+        background-image: url(../../../public/images/logos_facebook.svg);
+        background-repeat: no-repeat;
+        background-position: 41px;
+        padding-left: 86px;
+    }
+
+    &__separator {
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__auth-text {
+        margin-bottom: 22px;
+    }
+
+    &__or-text {
+        width: 37px;
+        height: 20px;
+
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        /* identical to box height, or 100% */
+
+        color: #FFFFFF;
+    }
+}
