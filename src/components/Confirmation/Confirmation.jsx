@@ -7,25 +7,14 @@ export const Confirmation = () => {
   const [passwordInput, setPasswordInput] = useState('');
   const [calendarEvent, setCalendarEvent] = useState(false);
 
-  const emailInputHandler = () => {
-    console.log(emailInput);
-  };
-
-  const phoneInputHandler = () => {
-    console.log(phoneInput);
-  }
-
-  const passwordInputHandler = () => {
-    console.log(passwordInput);
+  const formHandler = (event) => {
+    event.preventDefault();
+    console.log('form Handler');
   };
 
   const handleCalendarEvent = () => {
     setCalendarEvent(!calendarEvent);
     console.log(calendarEvent);
-  };
-
-  const handleAppointmentButton = () => {
-    console.log('The appointment with the doctor has been created!');
   };
 
     return (
@@ -35,62 +24,53 @@ export const Confirmation = () => {
           >Для підтвердження запису до лікаря треба ввести ці данні</p>
 
           <div>
-            <p className='Confirmation__text'>Email</p>
+            
             <form
-              onSubmit={emailInputHandler}
+              onSubmit={formHandler}
             >
+              <p className='Confirmation__text'>Email</p>
               <input
                   placeholder="you@company.com"
                   className='Confirmation__input'
                   value={emailInput}
                   onChange={e => setEmailInput(e.target.value)}
               />
-            </form>
-          </div>
 
-          <div>
-            <p className='Confirmation__text'>Номер телефону</p>
-            <form
-              onSubmit={phoneInputHandler}
-            >
+              <p className='Confirmation__text'>Номер телефону</p>
               <input
                   placeholder="+380 (063) 548 99 19"
                   className='Confirmation__input'
                   value={phoneInput}
                   onChange={e => setPhoneInput(e.target.value)}
               />
-            </form>
-          </div>
 
-          <div>
-            <p className='Confirmation__text'>Пароль</p>
-            <form
-              onSubmit={passwordInputHandler}
-            >
+              <p className='Confirmation__text'>Пароль</p>
               <input
                   placeholder="**********"
                   className='Confirmation__input'
                   value={passwordInput}
                   onChange={e => setPasswordInput(e.target.value)}
               />
+
+              <div >
+                <label className="Confirmation__checkbox">
+                  <input
+                    type="checkbox"
+                    checked={calendarEvent}
+                    onChange={handleCalendarEvent}
+                  />
+                  <p className="Confirmation__calendar-text">Позначити івент в Google Calendar</p>
+                </label>
+              </div>
+
+              <button
+                type='submit'
+                className="Confirmation__appointment"
+              >
+                Записатись
+              </button>
             </form>
           </div>
-
-          <div className="Confirmation__checkbox">
-            <input
-              type="checkbox"
-              checked={calendarEvent}
-              onChange={handleCalendarEvent}
-            />
-              <p className="Confirmation__calendar-text">Позначити івент в Google Calendar</p>
-          </div>
-
-          <button
-            className="Confirmation__appointment"
-            onClick={handleAppointmentButton}
-          >
-            Записатись
-          </button>
         </div>
     );
 };
