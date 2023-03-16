@@ -7,7 +7,8 @@
   align-items: center;
   background: #83EC68;
   border-radius: 40px;
-  background-image: url(../../../public/images/rectangle2.svg);
+  background-image: url(../../../public/images/booking-desktop.svg);
+  background-size: contain;
   background-repeat: no-repeat;
 
   max-width: 1115px;
@@ -18,10 +19,16 @@
   @include onTablet {
     // width: auto;
     margin: 0 auto 47px;
+    background-image: url(../../../public/images/booking-tablet.svg);
+    background-size: contain;
+
   }
 
   @include onMobile {
     // width: auto;
+    background-image: url(../../../public/images/booking-mobile.svg);
+    background-size: contain;
+
     height: max-content;
   }
 

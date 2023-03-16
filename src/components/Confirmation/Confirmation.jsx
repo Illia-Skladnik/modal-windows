@@ -21,7 +21,9 @@ export const Confirmation = () => {
         <div className='Confirmation'>
           <p
             className='Confirmation__title'
-          >Для підтвердження запису до лікаря треба ввести ці дані</p>
+          >
+            Для підтвердження запису до лікаря треба ввести ці дані
+          </p>
             
             <form
               className='Confirmation__form'
