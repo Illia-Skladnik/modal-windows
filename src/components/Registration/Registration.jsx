@@ -23,10 +23,11 @@ export const Registration = (props) => {
 
     return (
         <div className='Registration'>
-          <form
-              onSubmit={inputsHandler}
-          >
-            <p className='Registration__form-name'>Email</p>
+            <form
+                className='Registration__form'
+                onSubmit={inputsHandler}
+           >
+                <p className='Registration__form-name'>Email</p>
             <input
                 placeholder="you@company.com"
                 className='Registration__input Registration__input-email'

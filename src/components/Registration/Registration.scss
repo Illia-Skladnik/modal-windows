@@ -2,6 +2,15 @@
     display: flex;
     width: min-content;
     height: max-content;
+    @media(max-width: 765px) {
+        flex-direction: column;
+    }
+
+    @media(max-width: 765px) {
+        
+
+        // margin: 0 auto;
+    }
 
     &__form-name {
         color: #fff;
@@ -10,6 +19,12 @@
         font-size: 18px;
         line-height: 20px;
         margin-bottom: 6px;
+    }
+
+    &__form {
+        @media(max-width: 765px) {
+            width: auto;
+        }
     }
 
     &__input {
@@ -29,6 +44,11 @@
         letter-spacing: 0em;
         text-align: left;
         margin-right: 43px;
+
+        @media(max-width: 765px) {
+            width: auto;
+            margin: 0 auto;
+        }
     }
 
     &__input-email {
@@ -61,7 +81,7 @@
         flex-direction: row;
         align-items: center;
         padding: 0 27px;
-        gap: 10px;
+        // gap: 10px;
 
         border: 0;
 
@@ -79,6 +99,10 @@
         line-height: 150%;
 
         color: #FFFFFF;
+
+        @media(max-width: 765px) {
+            width: min-content;
+        }
     }
 
     &__button-google {
@@ -102,6 +126,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+
+        @media(max-width: 765px) {
+            display: none;
+        }
     }
 
     &__auth-text {

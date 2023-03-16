@@ -13,6 +13,11 @@
     background-repeat: no-repeat;
     // background-size: 116%;
 
+    @media(max-width: 765px) {
+        width: auto;
+        height: max-content;
+    }
+
     &__title {
         margin:  40px auto 83px;
         font-family: Fira Sans;
@@ -38,6 +43,11 @@
 
     &__Registration {
         margin: 0 auto 60px;
+        width: auto;
+
+        @media(max-width: 765px) {
+            margin: 0 auto 47px;
+        }
     }
 
     &__continue-button {
@@ -48,7 +58,6 @@
         padding: 0 27px;
         gap: 10px;
 
-        position: absolute;
         width: 250px;
         height: 62px;
 
@@ -56,6 +65,7 @@
         background: #82E867;
         border-radius: 40px;
         margin-left: 515px;
+        // margin: 0 auto;
 
         font-family: 'Oxygen';
         font-style: normal;
@@ -65,5 +75,9 @@
 
         color: #FFFFFF;
 
+        @media(max-width: 765px) {
+            width: auto;
+            margin: 0 auto 47px;
+        }
     }
 }   

@@ -32,14 +32,12 @@ export const Auth = () => {
                 />
             </div>
 
-            <div>
-                <button
-                    onClick={continueButtonHandler}
-                    className='Auth__continue-button'
-                >
-                    Продовжити
-                </button>
-            </div>
+            <button
+                onClick={continueButtonHandler}
+                className='Auth__continue-button'
+            >
+                Продовжити
+            </button>
         </div>
     );
 };
