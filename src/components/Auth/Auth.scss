@@ -2,11 +2,12 @@
 @import "../../style_utils/mixins";
 
 .Auth {
-  // box-sizing: border-box;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background: #83EC68;
-  width: 1197px;
+  max-width: 1197px;
+
   height: 592px;
   border-radius: 40px;
   box-shadow: 0 36px 47px rgba(0, 0, 0, 0.25);
@@ -48,8 +49,9 @@
     }
 
     &__Registration {
+        max-width: 100%;
         margin: 0 auto 60px;
-        width: auto;
+        // width: auto;
 
         @include onMobile {
             margin: 0 auto 47px;
@@ -70,8 +72,8 @@
         border: 0;
         background: #82E867;
         border-radius: 40px;
-        margin-left: 515px;
-        // margin: 0 auto;
+        // margin-left: 515px;
+        margin: 0 auto;
 
         font-family: 'Oxygen';
         font-style: normal;
