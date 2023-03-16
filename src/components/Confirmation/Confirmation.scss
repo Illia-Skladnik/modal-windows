@@ -5,10 +5,11 @@
   align-items: center;
   background: #83EC68;
   border-radius: 40px;
-  // box-shadow: 0px 36px 47px rgba(0, 0, 0, 0.25);
   background-image: url(../../../public/images/rectangle2.svg);
   background-repeat: no-repeat;
   // background-size: 100%;
+
+  // color: #fff;
 
   width: 1115px;
   height: 720px;
@@ -16,20 +17,19 @@
   &__title {
     width: 334px;
     height: 59px;
-    left: 413px;
-    top: 302px;
+    // left: 413px;
+    // top: 302px;
 
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
-    /* or 26px */
 
     text-align: center;
     letter-spacing: 0.08em;
 
-    color: #FFFFFF;
+    color: #fff;
     margin: 115px 0 30px;
   }
 
@@ -42,35 +42,29 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 20px;
-    /* identical to box height, or 111% */
+    line-height: 111%;
 
-    color: #FFFFFF;
+    color: #fff;
   }
 
   &__input {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
     padding: 12px 16px;
-    gap: 8px;
+    // gap: 8px;
 
     width: 480px;
     height: 48px;
 
-    /* White */
 
-    background: #FFFFFF;
-    /* Gray/300 */
+    // background: #FFFFFF;
 
     border: 1px solid #D0D5DD;
-    /* Shadow/xs */
 
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 1;
@@ -90,12 +84,11 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
-    /* identical to box height, or 167% */
+    line-height: 167%;
 
     letter-spacing: -0.5px;
 
-    color: #FFFFFF;
+    color: #fff;
   }
 
   &__checkbox {
@@ -107,27 +100,27 @@
   &__appointment {
     height: 62px;
     width: 250px;
-    left: 455px;
-    top: 713px;
+    // left: 455px;
+    // top: 713px;
     border-radius: 40px;
-    padding: 0px 27px 0px 27px;
+    // padding: 0 27px 0 27px;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 27px;
-    gap: 10px;
+    padding: 0 27px;
+    // gap: 10px;
 
-    left: 38.01%;
-    right: 41.1%;
-    top: 59.17%;
-    bottom: 35.68%;
+    // left: 38.01%;
+    // right: 41.1%;
+    // top: 59.17%;
+    // bottom: 35.68%;
 
     background: #82E867;
     border-radius: 40px;
 
-    font-family: Oxygen;
+    font-family: 'Oxygen';
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;

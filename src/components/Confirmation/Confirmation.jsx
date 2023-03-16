@@ -5,7 +5,7 @@ export const Confirmation = () => {
   const [emailInput, setEmailInput] = useState('');
   const [phoneInput, setPhoneInput] = useState('');
   const [passwordInput, setPasswordInput] = useState('');
-  const [calendarEvent, setCalendarEvent] = useState('');
+  const [calendarEvent, setCalendarEvent] = useState(false);
 
   const emailInputHandler = () => {
     console.log(emailInput);
@@ -21,6 +21,7 @@ export const Confirmation = () => {
 
   const handleCalendarEvent = () => {
     setCalendarEvent(!calendarEvent);
+    console.log(calendarEvent);
   };
 
   const handleAppointmentButton = () => {
@@ -55,7 +56,7 @@ export const Confirmation = () => {
               <input
                   placeholder="+380 (063) 548 99 19"
                   className='Confirmation__input'
-                  value={emailInput}
+                  value={phoneInput}
                   onChange={e => setPhoneInput(e.target.value)}
               />
             </form>
@@ -69,7 +70,7 @@ export const Confirmation = () => {
               <input
                   placeholder="**********"
                   className='Confirmation__input'
-                  value={emailInput}
+                  value={passwordInput}
                   onChange={e => setPasswordInput(e.target.value)}
               />
             </form>
