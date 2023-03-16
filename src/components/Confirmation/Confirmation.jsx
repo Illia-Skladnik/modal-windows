@@ -22,10 +22,9 @@ export const Confirmation = () => {
           <p
             className='Confirmation__title'
           >Для підтвердження запису до лікаря треба ввести ці дані</p>
-
-          <div>
             
             <form
+              className='Confirmation__form'
               onSubmit={formHandler}
             >
               <p className='Confirmation__text'>Email</p>
@@ -71,7 +70,6 @@ export const Confirmation = () => {
                 Записатись
               </button>
             </form>
-          </div>
         </div>
     );
 };
