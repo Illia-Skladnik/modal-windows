@@ -1,3 +1,5 @@
+@import "../../style_utils/mixins";
+
 .Confirmation {
   box-sizing: border-box;
   display: flex;
@@ -11,10 +13,10 @@
   width: 1115px;
   height: 720px;
 
-  @media(max-width: 765px) {
+  @include onMobile {
     width: auto;
     height: max-content;
-}
+  }
 
   &__title {
     width: 334px;
@@ -65,7 +67,7 @@
 
     margin-bottom: 32px;
 
-    @media(max-width: 765px) {
+    @include onMobile {
       width: auto;
       height: min-content;
     }
@@ -113,7 +115,7 @@
 
     color: #fff;
 
-    @media(max-width: 765px) {
+    @include onMobile {
       margin-bottom: 47px;
     }
   }

@@ -31,13 +31,14 @@ export const Auth = () => {
                     setPasswordInput={setPasswordInput}
                 />
             </div>
-
+                    
             <button
                 onClick={continueButtonHandler}
                 className='Auth__continue-button'
             >
                 Продовжити
             </button>
+
         </div>
     );
 };
