@@ -12,12 +12,6 @@
 
     &__title {
         margin:  40px auto 30px;
-        font-family: Fira Sans;
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 44px;
-        letter-spacing: 0.08em;
-        text-align: left;
 
         width: 562px;
         height: 44px;
@@ -27,7 +21,6 @@
         font-weight: 700;
         font-size: 34px;
         line-height: 130%;
-        /* or 44px */
 
         letter-spacing: 0.08em;
 
@@ -39,13 +32,6 @@
     }
 
     &__continue-button {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0 27px;
-
-        position: absolute;
         width: 250px;
         height: 62px;
 
@@ -58,16 +44,13 @@
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 24px;
-        /* identical to box height, or 150% */
+        line-height: 150%;
 
-
-        color: #FFFFFF;
+        color: #fff;
 
     }
 
     &__text {
-        // display: block;
         width: 482px;
         height: 63px;
         margin: 0 auto 30px;
@@ -77,7 +60,6 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
-        /* or 21px */
 
         text-align: center;
         letter-spacing: 0.08em;
@@ -86,14 +68,6 @@
     }
 
     &__button-patient {
-        display: flex;
-        flex-direction: row;
-        // align-items: flex-start;
-        align-items: center;
-        justify-content: center;
-        // padding: 14px 18px;
-        gap: 10px;
-
         width: 200px;
         height: 48px;
 
@@ -101,30 +75,18 @@
         border: 0;
         border-radius: 40px 0 0 40px;
 
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-
         font-family: 'Fira Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 20px;
-        /* identical to box height, or 100% */
+        line-height: 100%;
 
-        text-align: center;
         letter-spacing: 0.07em;
 
         color: #FFFFFF;
     }
 
     &__button-doctor {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-
         width: 200px;
         height: 48px;
 
@@ -132,24 +94,18 @@
         border: 0;
         border-radius: 0 40px 40px 0;
 
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-
         font-family: 'Fira Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 20px;
+        line-height: 100%;
 
-        text-align: center;
         letter-spacing: 0.07em;
 
-        color: #000000;
+        color: #000;
     }
 
     &__button-role {
         margin: 0 auto 9px;
-        display: flex;
     }
 }   
