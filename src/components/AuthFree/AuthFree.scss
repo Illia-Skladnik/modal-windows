@@ -1,3 +1,5 @@
+@import "../../style_utils/mixins";
+
 .AuthFree {
     display: flex;
     flex-direction: column;
@@ -10,7 +12,7 @@
     background-repeat: no-repeat;
     // background-size: 135%;
 
-    @media(max-width: 765px) {
+    @include onMobile {
         width: auto;
         height: max-content;
     }
@@ -32,7 +34,7 @@
 
         color: #FFFFFF;
 
-        @media(max-width: 765px) {
+        @include onMobile {
             width: min-content;
             font-size: 30px;
         }
@@ -59,7 +61,7 @@
 
         color: #fff;
 
-        @media(max-width: 765px) {
+        @include onMobile {
             margin: 0 auto 47px;
         }
 
@@ -100,7 +102,7 @@
 
         color: #FFFFFF;
 
-        @media(max-width: 765px) {
+        @include onMobile {
             border-radius: 40px;
             margin-bottom: 10px;
         }
@@ -124,7 +126,7 @@
 
         color: #000;
 
-        @media(max-width: 765px) {
+        @include onMobile {
             border-radius: 40px;
         }
     }
@@ -132,7 +134,7 @@
     &__button-role {
         margin: 0 auto 9px;
 
-        @media(max-width: 765px) {
+        @include onMobile {
             display: flex;
             flex-direction: column;
         }

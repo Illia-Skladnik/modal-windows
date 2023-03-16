@@ -1,15 +1,11 @@
+@import "../../style_utils/mixins";
+
 .Registration {
     display: flex;
     width: min-content;
     height: max-content;
-    @media(max-width: 765px) {
+    @include onMobile {
         flex-direction: column;
-    }
-
-    @media(max-width: 765px) {
-        
-
-        // margin: 0 auto;
     }
 
     &__form-name {
@@ -22,7 +18,7 @@
     }
 
     &__form {
-        @media(max-width: 765px) {
+        @include onMobile {
             width: auto;
         }
     }
@@ -45,7 +41,12 @@
         text-align: left;
         margin-right: 43px;
 
-        @media(max-width: 765px) {
+        @include onTablet {
+            width: auto;
+            // height: max-content;
+        }
+
+        @include onMobile {
             width: auto;
             margin: 0 auto;
         }
@@ -100,7 +101,13 @@
 
         color: #FFFFFF;
 
-        @media(max-width: 765px) {
+
+        @include onTablet {
+            width: auto;
+            // height: max-content;
+        }
+
+        @include onMobile {
             width: min-content;
         }
     }
@@ -127,7 +134,7 @@
         align-items: center;
         justify-content: space-around;
 
-        @media(max-width: 765px) {
+        @include onTablet {
             display: none;
         }
     }
