@@ -1,9 +1,9 @@
 import './AuthFree.scss'
 import { Registration } from '../Registration/Registration';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 export const AuthFree = () => {
-    const [operationType, setOperaionType] = useState('Зареєструватися');
+    // const [operationType, setOperaionType] = useState('Зареєструватися');
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
     const [role, setRole] = useState('patient');
@@ -17,15 +17,13 @@ export const AuthFree = () => {
         setRole('doctor');
         console.log('current role is ', role);
     };
-    
-    const userData = useRef({
-        role: 'role',
-        email: 'email',
-        password: 'password',
-    });
 
     const continueButtonHandler = () => {
-        console.log('Continue button');
+        console.log({
+          role,
+          email: emailInput,
+          password: passwordInput,
+      });
     };
 
     return (
@@ -53,7 +51,7 @@ export const AuthFree = () => {
 
             <div className='AuthFree__Registration'>
                 <Registration
-                    operationType={operationType}
+                    operationType={'Зареєструватися'}
                     emailInput={emailInput}
                     setEmailInput={setEmailInput}
                     passwordInput={passwordInput}
