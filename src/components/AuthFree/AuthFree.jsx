@@ -59,14 +59,12 @@ export const AuthFree = () => {
                 />
             </div>
 
-            <div>
-                <button
-                    onClick={continueButtonHandler}
-                    className='AuthFree__continue-button'
-                >
-                    Зареєструватись
-                </button>
-            </div>
+            <button
+                onClick={continueButtonHandler}
+                className='AuthFree__continue-button'
+            >
+                Зареєструватись
+            </button>
         </div>
     );
 };

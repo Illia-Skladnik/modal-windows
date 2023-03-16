@@ -10,22 +10,32 @@
     background-repeat: no-repeat;
     // background-size: 135%;
 
+    @media(max-width: 765px) {
+        width: auto;
+        height: max-content;
+    }
+
     &__title {
-      display: block;
-      margin:  40px auto 30px;
+        display: block;
+        margin:  40px auto 30px;
 
-      width: max-content;
-      height: 44px;
+        width: max-content;
+        height: 44px;
 
-      font-family: 'Fira Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 34px;
-      line-height: 130%;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 130%;
 
-      letter-spacing: 0.08em;
+        letter-spacing: 0.08em;
 
-      color: #FFFFFF;
+        color: #FFFFFF;
+
+        @media(max-width: 765px) {
+            width: min-content;
+            font-size: 30px;
+        }
     }
 
     &__Registration {
@@ -48,6 +58,10 @@
         line-height: 150%;
 
         color: #fff;
+
+        @media(max-width: 765px) {
+            margin: 0 auto;
+        }
 
     }
 
@@ -85,6 +99,11 @@
         letter-spacing: 0.07em;
 
         color: #FFFFFF;
+
+        @media(max-width: 765px) {
+            border-radius: 40px;
+            margin-bottom: 10px;
+        }
     }
 
     &__button-doctor {
@@ -104,9 +123,18 @@
         letter-spacing: 0.07em;
 
         color: #000;
+
+        @media(max-width: 765px) {
+            border-radius: 40px;
+        }
     }
 
     &__button-role {
         margin: 0 auto 9px;
+
+        @media(max-width: 765px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }   
