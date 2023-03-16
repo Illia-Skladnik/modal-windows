@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
     // background-size: 135%;
 
+    @include onTablet {
+        width: auto;
+        height: max-content;
+    }
+
     @include onMobile {
         width: auto;
         height: max-content;
@@ -60,6 +65,11 @@
         line-height: 150%;
 
         color: #fff;
+
+        @include onTablet {
+            width: auto;
+            margin: 0 auto 47px;
+        }
 
         @include onMobile {
             margin: 0 auto 47px;
