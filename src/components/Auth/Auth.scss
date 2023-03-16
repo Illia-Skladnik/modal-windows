@@ -14,6 +14,7 @@
   background-image: url(../../../public/images/rectangle.svg);
   background-repeat: no-repeat;
   // background-size: 116%;
+  padding:  0 10px;
 
   @include onTablet {
     width: auto;
