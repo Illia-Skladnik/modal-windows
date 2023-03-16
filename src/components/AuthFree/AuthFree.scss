@@ -11,20 +11,21 @@
     // background-size: 135%;
 
     &__title {
-        margin:  40px auto 30px;
+      display: block;
+      margin:  40px auto 30px;
 
-        width: 562px;
-        height: 44px;
+      width: max-content;
+      height: 44px;
 
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 34px;
-        line-height: 130%;
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 130%;
 
-        letter-spacing: 0.08em;
+      letter-spacing: 0.08em;
 
-        color: #FFFFFF;
+      color: #FFFFFF;
     }
 
     &__Registration {

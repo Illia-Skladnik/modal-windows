@@ -53,8 +53,9 @@ export const Confirmation = () => {
               />
 
               <div >
-                <label className="Confirmation__checkbox">
+                <label className="Confirmation__checkbox-label">
                   <input
+                    className="Confirmation__checkbox"
                     type="checkbox"
                     checked={calendarEvent}
                     onChange={handleCalendarEvent}
