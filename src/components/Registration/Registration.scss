@@ -6,13 +6,10 @@
     &__form-name {
         color: #fff;
         font-family: 'Fira Sans';
-        // font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 20px;
         margin-bottom: 6px;
-        // width: 45px;
-        // height: 20px;
     }
 
     &__input {
@@ -32,7 +29,6 @@
         letter-spacing: 0em;
         text-align: left;
         margin-right: 43px;
-        // padding-top: 12px;
     }
 
     &__input-email {
@@ -63,13 +59,11 @@
     &__button {
         display: flex;
         flex-direction: row;
-        // justify-content: center;
         align-items: center;
         padding: 0 27px;
         gap: 10px;
 
         border: 0;
-        
 
         width: 200px;
         height: 62px;
@@ -82,11 +76,9 @@
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 24px;
-        /* identical to box height, or 150% */
+        line-height: 150%;
 
-
-color: #FFFFFF;
+        color: #FFFFFF;
     }
 
     &__button-google {
@@ -95,7 +87,6 @@ color: #FFFFFF;
         background-repeat: no-repeat;
         background-position: 54px;
         padding-left: 91px;
-
     }
 
     &__button-facebook {
@@ -125,8 +116,7 @@ color: #FFFFFF;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 20px;
-        /* identical to box height, or 100% */
+        line-height: 100%;
 
         color: #FFFFFF;
     }

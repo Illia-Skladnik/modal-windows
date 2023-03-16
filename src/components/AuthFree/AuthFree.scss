@@ -123,7 +123,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        // padding: 14px;
         gap: 10px;
 
         width: 200px;
@@ -132,8 +131,6 @@
         background: #FFFFFF;
         border: 0;
         border-radius: 0 40px 40px 0;
-
-        /* Inside auto layout */
 
         flex: none;
         order: 1;
@@ -144,7 +141,6 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 20px;
-        /* identical to box height, or 100% */
 
         text-align: center;
         letter-spacing: 0.07em;
