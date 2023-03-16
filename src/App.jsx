@@ -12,21 +12,30 @@ const App = () => {
   
 
   const [showAuth, hideAuth] = useModal(() => (
-    <ReactModal isOpen>
+    <ReactModal 
+      isOpen
+      className="App__modal-content"
+    >
       <p>{<Auth/>}</p>
       <button onClick={hideAuth}>Hide modal</button>
     </ReactModal>
   ));
 
   const [showAuthFree, hideAuthFree] = useModal(() => (
-    <ReactModal isOpen>
+    <ReactModal
+      isOpen
+      className="App__modal-content"
+    >
       <p>{<AuthFree/>}</p>
       <button onClick={hideAuthFree}>Hide modal</button>
     </ReactModal>
   ));
 
   const [showConfirmation, hideConfirmation] = useModal(() => (
-    <ReactModal isOpen>
+    <ReactModal
+      isOpen
+      className="App__modal-content"
+    >
       <p>{<Confirmation/>}</p>
       <button onClick={hideConfirmation}>Hide Confirmation</button>
     </ReactModal>
