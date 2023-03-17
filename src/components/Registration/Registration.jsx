@@ -42,6 +42,13 @@ export const Registration = (props) => {
               value={passwordInput}
               onChange={e => setPasswordInput(e.target.value)}
             />
+
+            <button
+                type='submit'
+                className='Registration__submit-button'
+            >
+                Продовжити
+            </button>
           </form>
 
           <div className='Registration__separator'> 
@@ -52,8 +59,9 @@ export const Registration = (props) => {
 
           <div className='Registration__auth-buttons'>
               <p className='Registration__auth-text'> {`${operationType}  за допомогою`}</p>
-              
-                  <button
+
+                <div className='Registration__buttons-wrapper'>
+                <button
                       className='Registration__button Registration__button-google'
                       onClick={handleGoogleButton}
                   >
@@ -67,6 +75,9 @@ export const Registration = (props) => {
                   >
                       Facebook
                   </button>
+                </div>
+              
+
           </div>
         </div>
     );

@@ -7,6 +7,13 @@
     // max-width: min-content;
     height: max-content;
 
+
+
+    @include onTablet {
+        display: flex;
+        flex-direction: column;
+    }
+
     @include onMobile {
         flex-direction: column;
     }
@@ -18,11 +25,27 @@
         font-size: 18px;
         line-height: 20px;
         margin-bottom: 6px;
+
+        
     }
 
     &__form {
+        // display: block;
+
+        // width: 100%;
         width: 480px;
+        
         margin-right: 43px;
+
+        // @include onTablet {
+        //     width: auto;
+        // }
+
+        @include onTablet {
+            width: 100%;
+            margin: 0;
+            // max-width: 480px;
+        }
         
         @include onMobile {
             width: auto;
@@ -49,19 +72,20 @@
         
 
         @include onTablet {
-            width: auto;
+
+            width: 100%;
             // height: max-content;
         }
 
         @include onMobile {
             width: auto;
-            margin: 0 auto;
+            margin: 0 auto 20px;
         }
     }
 
     &__input-email {
         padding-left: 16px;
-        margin-bottom: 41px;
+        // margin-bottom: 41px;
     }
 
     &__input-password {
@@ -74,6 +98,21 @@
         border: 1px solid #ED5B5B;
     }
 
+    &__buttons-wrapper {
+        @include onTablet {
+            margin: 0 auto;
+            display: flex;
+            margin-bottom: 66px;
+        }
+
+        @include onMobile {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 52px;
+        }
+    }
+
     &__auth-buttons {
         width: 290px;
         font-family: 'Oxygen';
@@ -82,6 +121,10 @@
         font-size: 20px;
         line-height: 20px;
         color: #FFFFFF;
+
+        @include onTablet {
+            width: auto;
+        }
     }
 
     &__button {
@@ -89,10 +132,8 @@
         flex-direction: row;
         align-items: center;
         padding: 0 27px;
-        // gap: 10px;
 
-        border: 0;
-
+        border: 1px solid #FFFFFF;
         width: 200px;
         height: 62px;
 
@@ -110,12 +151,52 @@
 
 
         @include onTablet {
-            width: auto;
+            
+            height: 47px;
+            // width: auto;
             // height: max-content;
+            
         }
 
         @include onMobile {
-            width: min-content;
+            
+            // width: min-content;
+        }
+    }
+
+    &__submit-button {
+        display: none;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 27px;
+        gap: 10px;
+
+        width: 250px;
+        height: 62px;
+
+        border: 1px solid #FFFFFF;
+        background: #82E867;
+        border-radius: 40px;
+        // margin-left: 515px;
+        margin: 0 auto;
+
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+
+        color: #FFFFFF;
+
+        @include onTablet {
+            display: block;
+            margin: 30px auto;
+        }
+
+        @include onTablet {
+            margin-bottom: 19px;
         }
     }
 
@@ -125,6 +206,14 @@
         background-repeat: no-repeat;
         background-position: 54px;
         padding-left: 91px;
+
+        @include onTablet {
+            margin: 0 20px 0 0;
+        }
+
+        @include onMobile {
+            margin: 0 0 20px;
+        }
     }
 
     &__button-facebook {
@@ -132,6 +221,10 @@
         background-repeat: no-repeat;
         background-position: 41px;
         padding-left: 86px;
+
+        @include onTablet {
+            margin: 0;
+        }
     }
 
     &__separator {
@@ -142,12 +235,25 @@
         justify-content: space-around;
 
         @include onTablet {
-            display: none;
+            margin-right: 0;
         }
+
+        @include onMobile {
+            margin: 0;
+        }
+
+ 
     }
 
     &__auth-text {
         margin-bottom: 22px;
+        text-align: center;
+
+        @include onTablet {
+            // margin: 0 auto 20px;
+            // text-align: center;
+            margin-bottom: 20px; 
+         }
     }
 
     &__or-text {
@@ -161,5 +267,21 @@
         line-height: 100%;
 
         color: #FFFFFF;
+
+        @include onTablet {
+           margin-bottom: 30px; 
+        }
+
+        @include onTablet {
+           margin-bottom: 20px; 
+        }
+
+
+    }
+
+    &__line {
+        @include onTablet {
+            display: none;
+        }
     }
 }
