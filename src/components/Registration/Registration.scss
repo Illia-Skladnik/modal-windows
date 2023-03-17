@@ -70,7 +70,12 @@
     }
 
     &__input-email {
+        margin-bottom: 41px;
         padding-left: 16px;
+
+        @include onTablet {
+            margin-bottom: 20px;
+        }
     }
 
     &__input-password {
@@ -143,6 +148,7 @@
     &__submit-button {
         display: none;
 
+        border: 1px #fff solid;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -152,7 +158,6 @@
         width: 250px;
         height: 62px;
 
-        border: 1px solid #FFFFFF;
         background: #82E867;
         border-radius: 40px;
         margin: 0 auto;
