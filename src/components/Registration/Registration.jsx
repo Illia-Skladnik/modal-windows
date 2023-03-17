@@ -9,9 +9,13 @@ export const Registration = (props) => {
         setPasswordInput,
     } = props;
 
-    const inputsHandler = () => {
-      console.log('Registration inputs handler');
-    };
+    const inputsHandler = (event) => {
+    event.preventDefault();
+    console.log({
+        email: emailInput,
+        password: passwordInput,
+      })
+    }
 
     const handleGoogleButton = () => {
         console.log('Google button')
@@ -66,7 +70,7 @@ export const Registration = (props) => {
                 >
                       {Image}
                       Google
-                  </button>
+                </button>
 
                   <button
                       className='Registration__button Registration__button-facebook'
