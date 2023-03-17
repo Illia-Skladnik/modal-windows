@@ -7,18 +7,17 @@ export const Auth = () => {
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
     
-    const userData = useRef({
-        role: 'role',
-        email: 'eamil',
-        password: 'password',
-    });
+    // const userData = useRef({
+    //     role: 'role',
+    //     email: 'eamil',
+    //     password: 'password',
+    // });
 
     const continueButtonHandler = (event) => {
         event.preventDefault();
         console.log({
-            role: 'role',
-            email: 'eamil',
-            password: 'password',
+            email: emailInput,
+            password: passwordInput,
         })
     };
 
