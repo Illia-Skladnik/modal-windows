@@ -1,11 +1,12 @@
 @import "../../style_utils/mixins";
 
 .AuthFree {
+    // box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background: #83EC68;
-    width: 1197px;
-    height: 632px;
+    max-width: 1197px;
+    // height: 632px;
     border-radius: 40px;
     box-shadow: 0 36px 47px rgba(0, 0, 0, 0.25);
     background-image: url(../../../public/images/rectangle.svg);
@@ -23,6 +24,7 @@
     }
 
     &__title {
+        text-align: center;
         display: block;
         margin:  40px auto 30px;
 
@@ -39,14 +41,27 @@
 
         color: #FFFFFF;
 
-        @include onMobile {
+        @include onTablet {
+            font-size: 20px;
             width: min-content;
-            font-size: 30px;
+            font-size: 20px;
+        }
+
+        @include onMobile {
+            margin: 30px auto 20px;
+            width: min-content;
+            font-size: 16px;
         }
     }
 
     &__Registration {
+        max-width: 100%;
         margin: 0 auto 60px;
+
+        @include onTablet {
+            margin-bottom: 0;
+        }
+
     }
 
     &__continue-button {
@@ -66,7 +81,10 @@
 
         color: #fff;
 
+        margin: 0 auto;
+
         @include onTablet {
+            display: none;
             width: auto;
             margin: 0 auto 47px;
         }
@@ -78,7 +96,7 @@
     }
 
     &__text {
-        width: 482px;
+        max-width: 482px;
         height: 63px;
         margin: 0 auto 30px;
 
@@ -92,10 +110,21 @@
         letter-spacing: 0.08em;
 
         color: #FFFFFF;
+
+        @include onTablet {
+            font-size: 14px;
+        }
+
+        @include onMobile {
+            margin-bottom: 0;
+        }
     }
 
     &__button-patient {
+        // width: 200px;
         width: 200px;
+        max-width: 50%;
+        
         height: 48px;
 
         background: #ED5B5B;
@@ -115,11 +144,16 @@
         @include onMobile {
             border-radius: 40px;
             margin-bottom: 10px;
+            // width: 200px;
+            max-width: 100%;
         }
     }
 
     &__button-doctor {
         width: 200px;
+        max-width: 50%;
+        // width: 200px;
+        // width: 50%;
         height: 48px;
 
         background: #FFFFFF;
@@ -138,15 +172,21 @@
 
         @include onMobile {
             border-radius: 40px;
+            // width: 200px;
+            max-width: 100%;
         }
+
     }
 
     &__button-role {
         margin: 0 auto 9px;
+        max-width: 400px;
+        width: 100%;
 
         @include onMobile {
             display: flex;
             flex-direction: column;
+            width: 200px;
         }
     }
 }   
