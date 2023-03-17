@@ -28,7 +28,6 @@
     &__form {
         width: 480px;
         margin: 0 43px 0 5px;
-        // margin-right: 43px;
 
         @include onTablet {
             width: 100%;
@@ -146,6 +145,7 @@
 
     &__submit-button {
         display: none;
+        // The behavior was made for ease of layout
 
         border: 1px #fff solid;
         flex-direction: row;
