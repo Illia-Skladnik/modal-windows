@@ -9,15 +9,15 @@ import { Confirmation } from "./components/Confirmation/Confirmation";
 import './App.scss'
 
 const App = () => {
-  
+
 
   const [showAuth, hideAuth] = useModal(() => (
-    <ReactModal 
-      isOpen
+    <ReactModal
+    	isOpen
       className="App__modal-content"
       ariaHideApp={false}
     >
-      <p>{<Auth/>}</p>
+      <Auth/>
       <button onClick={hideAuth}>Hide modal</button>
     </ReactModal>
   ));
@@ -28,7 +28,7 @@ const App = () => {
       className="App__modal-content"
       ariaHideApp={false}
     >
-      <p>{<AuthFree/>}</p>
+			<AuthFree/>
       <button onClick={hideAuthFree}>Hide modal</button>
     </ReactModal>
   ));
@@ -39,21 +39,16 @@ const App = () => {
       className="App__modal-content"
       ariaHideApp={false}
     >
-      <p>{<Confirmation/>}</p>
+			<Confirmation/>
       <button onClick={hideConfirmation}>Hide Confirmation</button>
     </ReactModal>
   ));
 
   return (
     <>
-      {/* <Auth/> */}
       <button onClick={showAuth}>Show Auth</button>
       <button onClick={showAuthFree}>Show AuthFree</button>
       <button onClick={showConfirmation}>Show Confirmation</button>
-  
-      {/* <Registration
-        operationType={operationType}
-      /> */}
     </>
   );
 };
