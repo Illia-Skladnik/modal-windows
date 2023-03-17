@@ -2,6 +2,7 @@
 @import "../../style_utils/mixins";
 
 .Auth {
+	margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -13,9 +14,10 @@
   background-image: url(../../../public/images/Auth/authDesktop.svg);
   background-position: 50% 50%;
   background-size: 104%;
+
   background-repeat: no-repeat;
 
-  padding:  0 10px;
+  padding: 0 10px;
 
   @include onTablet {
     background-image: url(../../../public/images/Auth/authTablet.svg);
@@ -48,7 +50,7 @@
 
     letter-spacing: 0.08em;
 
-    color: #FFFFFF;
+    color: #fff;
 
     @include onTablet {
       margin-bottom: 48px;
@@ -57,7 +59,7 @@
     @include onMobile {
       margin: 30px auto;
     }
-    }
+  }
 
   &__Registration {
     max-width: 100%;
@@ -65,10 +67,6 @@
 
     @include onTablet {
       margin:  0 auto;
-    }
-
-    @include onMobile {
-      margin: 0 auto;
     }
   }
 

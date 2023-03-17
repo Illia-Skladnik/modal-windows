@@ -1,6 +1,7 @@
 @import "../../style_utils/mixins";
 
 .AuthFree {
+	margin: 0 auto;
   display: flex;
   flex-direction: column;
   background: #83EC68;
@@ -108,7 +109,7 @@
     text-align: center;
     letter-spacing: 0.08em;
 
-    color: #FFFFFF;
+    color: #fff;
 
     @include onTablet {
       font-size: 14px;
@@ -122,7 +123,6 @@
   &__button-patient {
     width: 200px;
     max-width: 50%;
-
     height: 48px;
 
     background: #ED5B5B;
