@@ -13,10 +13,13 @@ export const Auth = () => {
         password: 'password',
     });
 
-    console.log('userData', userData);
-
-    const continueButtonHandler = () => {
-        console.log('Continue button');
+    const continueButtonHandler = (event) => {
+        event.preventDefault();
+        console.log({
+            role: 'role',
+            email: 'eamil',
+            password: 'password',
+        })
     };
 
     return (

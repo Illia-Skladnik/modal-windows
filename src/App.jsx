@@ -15,6 +15,7 @@ const App = () => {
     <ReactModal 
       isOpen
       className="App__modal-content"
+      ariaHideApp={false}
     >
       <p>{<Auth/>}</p>
       <button onClick={hideAuth}>Hide modal</button>
@@ -25,6 +26,7 @@ const App = () => {
     <ReactModal
       isOpen
       className="App__modal-content"
+      ariaHideApp={false}
     >
       <p>{<AuthFree/>}</p>
       <button onClick={hideAuthFree}>Hide modal</button>
@@ -35,6 +37,7 @@ const App = () => {
     <ReactModal
       isOpen
       className="App__modal-content"
+      ariaHideApp={false}
     >
       <p>{<Confirmation/>}</p>
       <button onClick={hideConfirmation}>Hide Confirmation</button>

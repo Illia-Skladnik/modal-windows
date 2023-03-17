@@ -1,7 +1,7 @@
 import './Registration.scss';
 
 export const Registration = (props) => {
-    const { 
+    const {
         operationType,
         emailInput,
         setEmailInput,
@@ -26,7 +26,7 @@ export const Registration = (props) => {
             <form
                 className='Registration__form'
                 onSubmit={inputsHandler}
-           >
+            >
                 <p className='Registration__form-name'>Email</p>
             <input
                 placeholder="you@company.com"
@@ -51,33 +51,30 @@ export const Registration = (props) => {
             </button>
           </form>
 
-          <div className='Registration__separator'> 
+          <div className='Registration__separator'>
               <div className='Registration__line'></div>
-              <p className='Registration__or-text'>Або</p>   
+              <p className='Registration__or-text'>Або</p>
               <div className='Registration__line'></div>
           </div>
 
           <div className='Registration__auth-buttons'>
               <p className='Registration__auth-text'> {`${operationType}  за допомогою`}</p>
-
                 <div className='Registration__buttons-wrapper'>
                 <button
                       className='Registration__button Registration__button-google'
                       onClick={handleGoogleButton}
-                  >
+                >
                       {Image}
                       Google
                   </button>
 
                   <button
-                      className='Registration__button Registration__button-facebook' 
+                      className='Registration__button Registration__button-facebook'
                       onClick={handleFacebookButton}
                   >
                       Facebook
                   </button>
                 </div>
-              
-
           </div>
         </div>
     );
