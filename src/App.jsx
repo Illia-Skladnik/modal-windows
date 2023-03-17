@@ -9,8 +9,6 @@ import { Confirmation } from "./components/Confirmation/Confirmation";
 import './App.scss'
 
 const App = () => {
-
-
   const [showAuth, hideAuth] = useModal(() => (
     <ReactModal
     	isOpen

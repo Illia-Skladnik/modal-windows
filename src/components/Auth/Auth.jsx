@@ -36,5 +36,5 @@ export const Auth = () => {
       </button>
 
     </div>
-    );
+  );
 };
