@@ -9,7 +9,12 @@ export const Confirmation = () => {
 
   const formHandler = (event) => {
     event.preventDefault();
-    console.log('form Handler');
+    console.log({
+      email: emailInput,
+      phone: phoneInput,
+      password: passwordInput,
+      calendarEvent
+    });
   };
 
   const handleCalendarEvent = () => {
