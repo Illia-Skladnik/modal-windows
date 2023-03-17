@@ -51,6 +51,7 @@ export const AuthFree = () => {
 
             <div className='AuthFree__Registration'>
                 <Registration
+                    role={role}
                     operationType={'Зареєструватися'}
                     emailInput={emailInput}
                     setEmailInput={setEmailInput}

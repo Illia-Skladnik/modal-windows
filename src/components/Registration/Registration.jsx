@@ -7,11 +7,13 @@ export const Registration = (props) => {
         setEmailInput,
         passwordInput,
         setPasswordInput,
+        role,
     } = props;
 
     const inputsHandler = (event) => {
     event.preventDefault();
     console.log({
+        role,
         email: emailInput,
         password: passwordInput,
       })
