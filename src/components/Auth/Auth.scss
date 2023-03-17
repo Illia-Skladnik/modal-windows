@@ -28,77 +28,77 @@
     width: auto;
   }
 
-    &__title {
-        margin:  40px auto 83px;
-        font-family: Fira Sans;
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 44px;
-        letter-spacing: 0.08em;
-        text-align: left;
+  &__title {
+    margin:  40px auto 83px;
+    font-family: Fira Sans;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.08em;
+    text-align: left;
 
-        width: 269px;
-        height: 44px;
+    width: 269px;
+    height: 44px;
 
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 34px;
-        line-height: 130%;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
 
-        letter-spacing: 0.08em;
+    letter-spacing: 0.08em;
 
-        color: #FFFFFF;
+    color: #FFFFFF;
 
-        @include onTablet {
-            margin-bottom: 48px;
-        }
-
-        @include onMobile {
-            margin: 30px auto;
-        }
+    @include onTablet {
+      margin-bottom: 48px;
     }
 
-    &__Registration {
-        max-width: 100%;
-        margin: 0 auto 60px;
-
-        @include onTablet {
-            margin:  0 auto;
-        }
-
-        @include onMobile {
-            margin: 0 auto;
-        }
+    @include onMobile {
+      margin: 30px auto;
+    }
     }
 
-    &__continue-button {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0 27px;
-        gap: 10px;
+  &__Registration {
+    max-width: 100%;
+    margin: 0 auto 60px;
 
-        width: 250px;
-        height: 62px;
-
-        border: 1px solid #FFFFFF;
-        background: #82E867;
-        border-radius: 40px;
- 
-        margin: 0 auto 99px;
-
-        font-family: 'Oxygen';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 150%;
-
-        color: #FFFFFF;
-
-        @include onTablet {
-            display: none;
-        }
+    @include onTablet {
+      margin:  0 auto;
     }
-}   
+
+    @include onMobile {
+      margin: 0 auto;
+    }
+  }
+
+  &__continue-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 27px;
+    gap: 10px;
+
+    width: 250px;
+    height: 62px;
+
+    border: 1px solid #FFFFFF;
+    background: #82E867;
+    border-radius: 40px;
+
+    margin: 0 auto 99px;
+
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+}

@@ -1,188 +1,185 @@
 @import "../../style_utils/mixins";
 
 .AuthFree {
-    display: flex;
-    flex-direction: column;
-    background: #83EC68;
-    max-width: 1197px;
-    border-radius: 40px;
-    box-shadow: 0 36px 47px rgba(0, 0, 0, 0.25);
-    background-image: url(../../../public/images/Auth/authDesktop.svg);
-    background-position: 50% 40%;
-    background-size: 105%;               
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background: #83EC68;
+  max-width: 1197px;
+  border-radius: 40px;
+  box-shadow: 0 36px 47px rgba(0, 0, 0, 0.25);
+  background-image: url(../../../public/images/Auth/authDesktop.svg);
+  background-position: 50% 40%;
+  background-size: 105%;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    background-image: url(../../../public/images/Auth/authTablet.svg);
+    background-size: cover;
+    width: auto;
+    height: max-content;
+  }
+
+  @include onMobile {
+    background-image: url(../../../public/images/Auth/authMobile.svg);
+    width: auto;
+    height: max-content;
+  }
+
+  &__title {
+    text-align: center;
+    display: block;
+    margin:  40px auto 30px;
+
+    width: max-content;
+
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
+
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
 
     @include onTablet {
-        background-image: url(../../../public/images/Auth/authTablet.svg);
-        background-size: cover;
-        width: auto;
-        height: max-content;
+      font-size: 20px;
+      width: min-content;
+      font-size: 20px;
     }
 
     @include onMobile {
-        background-image: url(../../../public/images/Auth/authMobile.svg);
-        width: auto;
-        height: max-content;
+      margin: 20px auto 10px;
+      width: min-content;
+      font-size: 16px;
+    }
+  }
+
+  &__Registration {
+    max-width: 100%;
+    margin: 0 auto 60px;
+
+    @include onTablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__continue-button {
+    width: 250px;
+    height: 62px;
+
+    border: 1px solid #FFFFFF;
+    background: #82E867;
+    border-radius: 40px;
+
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #fff;
+
+    margin: 0 auto 32px;
+
+    @include onTablet {
+      display: none;
+      // The behavior was made for ease of layout
+      width: auto;
+      margin: 0 auto 47px;
     }
 
-    &__title {
-        text-align: center;
-        display: block;
-        margin:  40px auto 30px;
+    @include onMobile {
+      margin: 0 auto 47px;
+    }
+  }
 
-        width: max-content;
+  &__text {
+    max-width: 482px;
+    height: auto;
+    margin: 0 auto 30px;
 
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 34px;
-        line-height: 130%;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
 
-        letter-spacing: 0.08em;
+    text-align: center;
+    letter-spacing: 0.08em;
 
-        color: #FFFFFF;
+    color: #FFFFFF;
 
-        @include onTablet {
-            font-size: 20px;
-            width: min-content;
-            font-size: 20px;
-        }
-
-        @include onMobile {
-            margin: 20px auto 10px;
-            width: min-content;
-            font-size: 16px;
-        }
+    @include onTablet {
+      font-size: 14px;
     }
 
-    &__Registration {
-        max-width: 100%;
-        margin: 0 auto 60px;
-
-        @include onTablet {
-            margin-bottom: 0;
-        }
-
+    @include onMobile {
+      margin-bottom: 20px;
     }
+  }
 
-    &__continue-button {
-        width: 250px;
-        height: 62px;
+  &__button-patient {
+    width: 200px;
+    max-width: 50%;
 
-        border: 1px solid #FFFFFF;
-        background: #82E867;
-        border-radius: 40px;
+    height: 48px;
 
-        font-family: 'Oxygen';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 150%;
+    background: #ED5B5B;
+    border: 0;
+    border-radius: 40px 0 0 40px;
 
-        color: #fff;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
 
-        margin: 0 auto 32px;
+    letter-spacing: 0.07em;
 
-        @include onTablet {
-            display: none;
-            // The behavior was made for ease of layout
-            width: auto;
-            margin: 0 auto 47px;
-        }
+    color: #FFFFFF;
 
-        @include onMobile {
-            margin: 0 auto 47px;
-        }
-
+    @include onMobile {
+      border-radius: 40px;
+      margin-bottom: 10px;
+      max-width: 100%;
     }
+  }
 
-    &__text {
-        max-width: 482px;
-        height: auto;
-        margin: 0 auto 30px;
+  &__button-doctor {
+    width: 200px;
+    max-width: 50%;
+    height: 48px;
 
-        font-family: 'Oxygen';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 130%;
+    background: #FFFFFF;
+    border: 0;
+    border-radius: 0 40px 40px 0;
 
-        text-align: center;
-        letter-spacing: 0.08em;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
 
-        color: #FFFFFF;
+    letter-spacing: 0.07em;
 
-        @include onTablet {
-            font-size: 14px;
-        }
+    color: #000;
 
-        @include onMobile {
-            margin-bottom: 20px;
-        }
+    @include onMobile {
+      border-radius: 40px;
+      max-width: 100%;
     }
+  }
 
-    &__button-patient {
-        width: 200px;
-        max-width: 50%;
-        
-        height: 48px;
+  &__button-role {
+    margin: 0 auto 9px;
+    max-width: 400px;
+    width: 100%;
 
-        background: #ED5B5B;
-        border: 0;
-        border-radius: 40px 0 0 40px;
-
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 100%;
-
-        letter-spacing: 0.07em;
-
-        color: #FFFFFF;
-
-        @include onMobile {
-            border-radius: 40px;
-            margin-bottom: 10px;
-            max-width: 100%;
-        }
+    @include onMobile {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
     }
-
-    &__button-doctor {
-        width: 200px;
-        max-width: 50%;
-        height: 48px;
-
-        background: #FFFFFF;
-        border: 0;
-        border-radius: 0 40px 40px 0;
-
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 100%;
-
-        letter-spacing: 0.07em;
-
-        color: #000;
-
-        @include onMobile {
-            border-radius: 40px;
-            max-width: 100%;
-        }
-
-    }
-
-    &__button-role {
-        margin: 0 auto 9px;
-        max-width: 400px;
-        width: 100%;
-
-        @include onMobile {
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-        }
-    }
-}   
+  }
+}
