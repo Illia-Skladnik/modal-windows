@@ -8,8 +8,10 @@
   background: #83EC68;
   border-radius: 40px;
   background-image: url(../../../public/images/Confirmation/confirmationDesktop.svg);
-  background-size: contain;
+  // background-size: contain;
   background-repeat: no-repeat;
+  background-position: 50% 40%;
+  background-size: 105%;
 
   max-width: 1115px;
   height: 720px;
@@ -18,16 +20,20 @@
 
   @include onTablet {
     // width: auto;
-    margin: 0 auto 47px;
+    // margin: 0 auto;
     background-image: url(../../../public/images/Confirmation/confirmationTablet.svg);
-    background-size: contain;
+    // background-size: cover;
+    background-position: 50% 30%;
+    background-size: 109%;
 
   }
 
   @include onMobile {
     // width: auto;
     background-image: url(../../../public/images/Confirmation/confirmaionMobile.svg);
-    background-size: contain;
+    background-position: 50% 50%;
+    background-size: 113%;
+    // background-size: contain;
 
     height: max-content;
   }
