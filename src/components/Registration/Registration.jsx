@@ -70,7 +70,6 @@ export const Registration = (props) => {
               className='Registration__button Registration__button-google'
               onClick={handleGoogleButton}
             >
-              {Image}
               Google
             </button>
 

@@ -3,7 +3,6 @@ import { Registration } from '../Registration/Registration';
 import { useState } from 'react';
 
 export const Auth = () => {
-  const [operationType, setOperaionType] = useState('Авторизуйтесь');
   const [emailInput, setEmailInput] = useState('');
   const [passwordInput, setPasswordInput] = useState('');
 
@@ -20,7 +19,7 @@ export const Auth = () => {
       <p className='Auth__title'>Авторизуйтесь</p>
       <div className='Auth__Registration'>
         <Registration
-          operationType={operationType}
+          operationType={'Авторизуйтесь'}
           emailInput={emailInput}
           setEmailInput={setEmailInput}
           passwordInput={passwordInput}
@@ -34,7 +33,6 @@ export const Auth = () => {
       >
         Продовжити
       </button>
-
     </div>
   );
 };

@@ -1,11 +1,9 @@
 import React from "react";
 import ReactModal from "react-modal";
 import { useModal } from "react-modal-hook";
-
 import { Auth } from "./components/Auth/Auth";
 import { AuthFree } from "./components/AuthFree/AuthFree";
 import { Confirmation } from "./components/Confirmation/Confirmation";
-
 import './App.scss'
 
 const App = () => {
@@ -44,7 +42,7 @@ const App = () => {
 
   return (
     <>
-      <button onClick={showAuth}>Show Auth</button>
+			<button onClick={showAuth}>Show Auth</button>
       <button onClick={showAuthFree}>Show AuthFree</button>
       <button onClick={showConfirmation}>Show Confirmation</button>
     </>
